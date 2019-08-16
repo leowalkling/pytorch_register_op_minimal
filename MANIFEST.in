@@ -1,0 +1,7 @@
+include README.md LICENSE
+global-include CMakeLists.txt *.cmake
+recursive-include torch_plus *.py
+recursive-include torch_plus_ops *.cpp *.h
+prune _skbuild
+prune pytorch_additions.egg-info
+global-exclude *.py[co]
